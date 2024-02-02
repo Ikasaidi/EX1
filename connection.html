@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Connection</h1>
+    <form >
+        <label for="name">username : </label>
+        <input type="text" id="name" name="name">
+
+        <label for="password">password :</label>
+        <input type="password" id="password" name="password">
+        
+        <button id="login" onclick=donnee()>login</button>
+</body>
+<script>
+   function donnee(){
+    let user = document.getElementById("name").value;
+    let pass = document.getElementById("password").value;
+    localStorage.setItem("nom", user);
+    localStorage.setItem("pw", pass);
+   }
+</script>
+</html>
